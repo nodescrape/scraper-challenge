@@ -1,0 +1,20 @@
+{
+    "productName": "SAMSUNG GALAXY S10 SM-G973 128GB PRISM BLACK",
+    "price": 2588.41,
+    "totalOffers": 48,
+    "minPrice": 2419,
+    "maxPrice": 4334.06,
+    "mediamarktPrice": 3499,
+    "mediaexpertPrice": 3499,
+    "euroPrice": 3499,
+    "allOffers": [
+        {
+            "retailer": "vobis.pl",
+            "price": 3499
+        },
+        {
+            "retailer": "electro.pl",
+            "price": 3499
+        }
+    ]
+};

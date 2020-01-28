@@ -1,0 +1,37 @@
+{
+    "name": "ceneoscraper",
+    "version": "0.0.1",
+    "description": "",
+    "scripts": {
+        "build": "tsc",
+        "producer": "node ./dist/producer.js",
+        "worker": "node ./dist/worker.js",
+        "server": "node ./dist/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "bull": "^3.12.1",
+        "bull-arena": "^2.7.1",
+        "chalk": "^3.0.0",
+        "cheerio": "^1.0.0-rc.3",
+        "clear": "^0.1.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "inquirer": "^7.0.4",
+        "puppeteer": "^2.1.0",
+        "valid-url": "^1.0.9"
+    },
+    "devDependencies": {
+        "@types/bull": "^3.12.0",
+        "@types/chalk": "^2.2.0",
+        "@types/cheerio": "^0.22.15",
+        "@types/clear": "^0.1.0",
+        "@types/dotenv": "^8.2.0",
+        "@types/express": "^4.17.2",
+        "@types/inquirer": "^6.5.0",
+        "@types/puppeteer": "^2.0.0",
+        "@types/valid-url": "^1.0.2"
+    }
+}
