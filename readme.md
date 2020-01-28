@@ -1,6 +1,6 @@
 # Scraper Challenge
 
-Before use type `npm run build` in terminal and add .env file.
+Before use type `npm install -g typescript` , `npm run build` in terminal and add .env file.
 
 ## Commands:
 
