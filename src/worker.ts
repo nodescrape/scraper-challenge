@@ -8,6 +8,7 @@ import getRetailerPrice from "./utils/getRetailerPrice";
 import linksQueue from "./queues/linksQueue";
 import puppeteer = require("puppeteer");
 import wait from "./utils/wait";
+import formatProductName from "./utils/formatProductName";
 
 const main = async () => {
     console.log(chalk.blue("Ceneo Scraper Worker"));
@@ -39,7 +40,7 @@ const main = async () => {
         const prices = allOffers.map((offer: Offer) => offer.price);
 
         const data = {
-            productName: productName.toUpperCase(),
+            productName: formatProductName(productName),
             price: Number(price),
             totalOffers: allOffers.length,
             minPrice: Math.min(...prices),
