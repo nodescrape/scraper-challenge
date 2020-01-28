@@ -29,10 +29,12 @@ const main = async () => {
         const price = $("[data-price]").attr("data-price");
         const offers = $("tr.product-offer").get();
 
-        const allOffers: Offer[] = offers.map(product => ({
-            retailer: $(product).attr("data-shopurl"),
-            price: Number($(product).attr("data-price"))
-        }));
+        const allOffers: Offer[] = offers
+            .map(product => ({
+                retailer: $(product).attr("data-shopurl"),
+                price: Number($(product).attr("data-price"))
+            }))
+            .filter(offer => !!offer.price && !!offer.retailer);
 
         const prices = allOffers.map((offer: Offer) => offer.price);
 
