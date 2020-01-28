@@ -3,7 +3,7 @@ import dotenv = require("dotenv");
 
 dotenv.config();
 
-const linksQueue = new Queue("CeneoScrapper", {
+const linksQueue = new Queue("CeneoScraper", {
     redis: {
         port: Number(process.env.REDIS_PORT),
         host: process.env.REDIS_HOST,

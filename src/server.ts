@@ -7,8 +7,8 @@ Arena(
     {
         queues: [
             {
-                name: "CeneoScrapper",
-                hostId: "CeneoScrapper",
+                name: "CeneoScraper",
+                hostId: "CeneoScraper",
                 redis: {
                     port: Number(process.env.REDIS_PORT),
                     host: process.env.REDIS_HOST,
